@@ -9,7 +9,11 @@ class App extends Component {
   render() {
     return (
       <Form className="App">
-        <h1>mywebsite.com</h1>
+        <h1>
+          <span className="font-weight-bold">mywebsite</span>.com
+        </h1>
+        <h2>Welcome</h2>
+        <label>Email</label>
       </Form>
     );
   }
