@@ -12,11 +12,25 @@ class App extends Component {
         <h1>
           <span className="font-weight-bold">mywebsite</span>.com
         </h1>
-        <h2>Welcome</h2>
+        <h2 className="text-center">Welcome</h2>
         <FormGroup>
           <label>Email</label>
           <Input type="email" placeholder="Email" />
         </FormGroup>
+        <FormGroup>
+          <label>Password</label>
+          <Input type="password" placeholder="Password" />
+        </FormGroup>
+        <button className="btn-lg btn-dark btn-block">Log In</button>
+        <div className="text-center pt-3">
+          or continue with your social account
+        </div>
+        <FacebookLoginButton className="mt-3 mb-3" />
+        <div className="text-center">
+          <a href="/sign-up">Sign Up</a>
+          <span className="p-2">|</span>
+          <a href="/sign-up">Forgot Password</a>
+        </div>
       </Form>
     );
   }
